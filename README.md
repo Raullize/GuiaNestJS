@@ -6,8 +6,8 @@ Bem-vindo ao GuiaNestJS, um recurso completo para aprender NestJS e dominar a cr
 
 1. [💻 Introdução ao NestJS](#introducao-ao-nestjs) 
 2. [📌 Por que usar NestJS?](#porque-usar-nestjs) 
-3. [🛠️ NestJS CLI (Command Line Interface)](contents/cli.md) 
-4. [🏗️ Arquitetura e Conceitos Fundamentais](contents/conceitos-fundamentais.md) 
+3. [🏗️ Arquitetura e Conceitos Fundamentais](contents/conceitos-fundamentais.md) 
+4. [🛠️ NestJS CLI (Command Line Interface)](contents/cli.md) 
 5. [🎮 Controllers (Controladores)](contents/controllers.md) 
 6. [💉 Providers e Injeção de Dependência](contents/providers.md) 
 7. [📦 Modules (Módulos)](contents/modules.md) 
