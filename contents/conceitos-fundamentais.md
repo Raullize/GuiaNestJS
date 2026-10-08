@@ -1,4 +1,4 @@
-# 🏗️ Arquitetura e Conceitos Fundamentais
+# Arquitetura e Conceitos Fundamentais
 
 A arquitetura do NestJS é um dos seus maiores diferenciais. Fortemente inspirada no Angular, ela foi projetada para resolver o "problema da arquitetura" no ecossistema Node.js, onde a falta de padrões frequentemente resulta em códigos difíceis de manter e escalar.
 
@@ -6,7 +6,7 @@ O NestJS propõe uma estrutura opinativa (opinionated), baseada em **Injeção d
 
 ---
 
-## 🧩 Os Três Pilares do NestJS
+## Os Três Pilares do NestJS
 
 Para entender o fluxo de uma aplicação Nest, você precisa conhecer seus três componentes principais. Eles formam a base de qualquer recurso que você criar:
 
@@ -18,8 +18,8 @@ A camada responsável por **receber as requisições HTTP** do cliente (Frontend
 [Saiba mais sobre Controllers →](controllers.md)
 
 ### 2. Providers / Services (Provedores / Serviços)
-É aqui que vive a **Regra de Negócio** (Business Logic) da sua aplicação. 
-- **O que eles fazem:** Processam dados, comunicam-se com bancos de dados, chamam APIs externas, etc. 
+É aqui que vive a **Regra de Negócio** (Business Logic) da sua aplicação.
+- **O que eles fazem:** Processam dados, comunicam-se com bancos de dados, chamam APIs externas, etc.
 - **A Mágica da Injeção de Dependência (DI):** O NestJS possui um contêiner de Inversão de Controle (IoC) integrado. Quando você decora uma classe com `@Injectable()`, o NestJS entende que essa classe pode ser injetada em outras.
   - **Exemplo prático:** Em vez de você fazer `const service = new UsersService()` dentro do seu Controller (o que criaria um alto acoplamento), você simplesmente declara o `UsersService` no construtor do Controller. O NestJS, por debaixo dos panos, cria a instância do Service e a entrega (injeta) pronta para uso.
   - **Vantagens:** Isso facilita imensamente a criação de **Testes Unitários** (pois você pode injetar "mocks" no lugar dos serviços reais) e permite reaproveitar a mesma instância de um serviço em vários lugares da aplicação (padrão Singleton).
@@ -27,7 +27,7 @@ A camada responsável por **receber as requisições HTTP** do cliente (Frontend
 [Saiba mais sobre Providers →](providers.md)
 
 ### 3. Modules (Módulos)
-Os módulos são a forma do NestJS **organizar e agrupar** o código por domínio ou funcionalidade. 
+Os módulos são a forma do NestJS **organizar e agrupar** o código por domínio ou funcionalidade.
 - **O que eles fazem:** Eles "empacotam" Controllers e Providers relacionados (ex: um `UsersModule` agrupará `UsersController` e `UsersService`). Toda aplicação Nest tem pelo menos um módulo raiz (geralmente chamado `AppModule`).
 - **Encapsulamento:** Por padrão, os Providers dentro de um módulo são encapsulados (privados). Para usá-los em outro lugar, o módulo precisa exportá-los explicitamente.
 
@@ -35,7 +35,7 @@ Os módulos são a forma do NestJS **organizar e agrupar** o código por domíni
 
 ---
 
-## 🔄 O Ciclo de Vida da Requisição (Request Lifecycle)
+## O Ciclo de Vida da Requisição (Request Lifecycle)
 
 No Express puro, o fluxo de uma requisição geralmente passa por middlewares até chegar ao manipulador da rota. O NestJS expande isso, introduzindo várias camadas de processamento (inspiradas em padrões de design) para manter o código limpo e organizado.
 
@@ -52,7 +52,7 @@ Quando uma requisição chega, ela passa por essas etapas (nesta ordem):
 
 ---
 
-## 🎯 Por que tanta separação?
+## Por que tanta separação?
 
 Pode parecer muita coisa no começo, mas essa separação tem um propósito claro (o princípio de **Single Responsibility** - Responsabilidade Única):
 

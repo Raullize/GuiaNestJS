@@ -1,4 +1,4 @@
-# 🛠️ NestJS CLI (Command Line Interface)
+# NestJS CLI (Command Line Interface)
 
 O **NestJS CLI** é uma ferramenta de linha de comando poderosa que ajuda a inicializar, desenvolver e manter aplicações Nest de forma rápida e eficiente. Ele automatiza tarefas repetitivas, como a criação de arquivos boilerplate, e garante que o seu código siga as convenções e a estrutura recomendadas pelo framework.
 
@@ -7,7 +7,7 @@ O **NestJS CLI** é uma ferramenta de linha de comando poderosa que ajuda a inic
 
 ---
 
-## 📥 Instalação
+## Instalação
 
 Para utilizar o CLI globalmente na sua máquina, instale-o via npm (ou yarn/pnpm):
 
@@ -23,7 +23,7 @@ nest --version
 
 ---
 
-## 🚀 Comandos Básicos
+## Comandos Básicos
 
 Aqui estão os comandos mais comuns para o dia a dia de desenvolvimento:
 
@@ -39,7 +39,7 @@ Inicia o servidor em modo de observação (watch mode). Qualquer alteração no 
 nest start --watch
 ```
 
-### 🆘 Obtendo Ajuda (Help)
+### Obtendo Ajuda (Help)
 O CLI possui um sistema de ajuda integrado muito útil. Se você esquecer algum comando ou quiser ver todas as opções disponíveis para um comando específico, use:
 ```bash
 # Lista todos os comandos e opções gerais disponíveis
@@ -51,7 +51,7 @@ nest generate --help
 
 ---
 
-## 🏗️ Generators (Geradores de Código)
+## Generators (Geradores de Código)
 
 A verdadeira mágica do CLI está nos geradores. Eles permitem criar diferentes blocos de construção da sua aplicação com um único comando. A sintaxe base é `nest generate <tipo> <nome>` (ou simplesmente `nest g <tipo> <nome>`).
 
@@ -65,7 +65,7 @@ A verdadeira mágica do CLI está nos geradores. Eles permitem criar diferentes 
 | `nest generate pipe custom` | `nest g pi custom` | Cria um Pipe personalizado. |
 | `nest generate guard auth` | `nest g gu auth` | Cria um Guard de autenticação. |
 
-### 🌟 O Comando "Mágico": Resource
+### O Comando "Mágico": Resource
 
 Se você precisar criar um CRUD completo (Módulo, Controlador, Serviço, Entidades e DTOs) de uma só vez, o CLI tem um atalho perfeito:
 
@@ -76,7 +76,7 @@ nest g resource users
 
 ---
 
-## 🛠️ Opções Úteis ao Gerar Arquivos
+## Opções Úteis ao Gerar Arquivos
 
 - `--no-spec`: Impede a criação do arquivo de testes unitários (`.spec.ts`).
   *Ex: `nest g s users --no-spec`*
